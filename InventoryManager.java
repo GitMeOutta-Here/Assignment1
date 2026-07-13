@@ -1,4 +1,4 @@
-public class InventoryDisplay {
+public class InventoryManager {
     public static void printInventory(String[] names, double[] prices, int[] stocks) {
         for (int i = 0; i < 10; i++) {
             if (names[i] == null || prices[i] == 0) {
