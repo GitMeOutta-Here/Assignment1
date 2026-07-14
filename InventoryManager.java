@@ -1,6 +1,15 @@
 import java.util.Scanner;
 
 public class InventoryManager {
+
+    /**
+    * Gets user input, handles erroneous inputs,
+    * and calls restockItem & printInventory
+    * 
+    * @param args Stores command line inputs at runtime
+    * @return Returns nothing since method is void
+    */
+    
     public static void main(String[] args) {
         String[] itemNames = {"Corn", "Beef", "Tomatoes", "Bluberry", "Ham", "Cheese", "Turkey", "Radish", "Broccoli", "Grapes"};
         double[] itemPrices = {2.50, 3.75, 0.45, 0.12, 2.0, 1.43, 3.21, 0.76, 0.34, 0.09};
@@ -47,6 +56,16 @@ public class InventoryManager {
         }
 
     }
+
+    /**
+    * Prints the name, price, and stocks of each item in the arrays
+    * 
+    * @param names  The name of each item.
+    * @param prices The price of each item
+    * @param stocks The amouunt of each item
+    * @return Returns nothing since method is void
+    */
+
     
     public static void printInventory(String[] names, double[] prices, int[] stocks) {
         for (int i = 0; i < 10; i++) {
@@ -65,6 +84,16 @@ public class InventoryManager {
         }
     }
 
+    /**
+    * Increases the stock of a selected item
+    * 
+    * @param names  The name of each item.
+    * @param stocks The amouunt of each item
+    * @param target The target item to restock
+    * @param amount The amount of items that will be restocked
+    * @return Returns nothing since method is void
+    */
+ 
     public static void restockItem(String[] names, int[] stocks, String target, int amount) {
         boolean isFound = false;
         for (int i = 0; i < 10; i++) {
