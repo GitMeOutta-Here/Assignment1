@@ -20,6 +20,7 @@ public class InventoryManager {
                     case 1 -> printInventory(itemNames, itemPrices, itemStocks);
                     case 2 -> {
                         System.out.print("Which item are you restocking?: ");
+                        scanner.nextLine();
                         while (scanner.hasNextInt() || scanner.hasNextDouble()) {
                             System.out.print("\nInvalid input. Enter the name of the item you are restocking: ");
                             scanner.nextLine();
