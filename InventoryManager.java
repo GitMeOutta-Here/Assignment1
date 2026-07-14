@@ -12,7 +12,7 @@ public class InventoryManager {
                 System.out.println("Please make a selection: ");
                 System.out.print("1 to view inventory, 2 to restock an item, 3 to exit: ");
                 while (!scanner.hasNextInt()) {
-                    System.out.println("Invalid selection, please enter 1, 2, or 3.");
+                    System.out.print("\nInvalid selection, please enter 1, 2, or 3: ");
                     scanner.nextLine();
                 }
                 int selection = scanner.nextInt();
@@ -21,20 +21,20 @@ public class InventoryManager {
                     case 2 -> {
                         System.out.print("Which item are you restocking?: ");
                         while (scanner.hasNextInt() || scanner.hasNextDouble()) {
-                            System.out.println("Invalid input. Enter the name of the item you are restocking.");
+                            System.out.print("\nInvalid input. Enter the name of the item you are restocking: ");
                             scanner.nextLine();
                         }
                         String itemToRestock = scanner.nextLine();
                         System.out.print("How many of that item are you restocking?: ");
                         while (!scanner.hasNextInt()) {
-                            System.out.println("Invalid selection. Please enter a whole number.");
+                            System.out.print("\nInvalid selection. Please enter a whole number: ");
                             scanner.nextLine();
                         }
                         int numToRestock = scanner.nextInt();
                         restockItem(itemNames, itemStocks, itemToRestock, numToRestock);
                     }
                     case 3 -> {
-                        System.out.println("Program exiting. Goodbye.");
+                        System.out.println("Program exiting. Goodbye.\n");
                         return;
                     }
                     default -> {
