@@ -28,6 +28,7 @@ public class InventoryManager {
                         System.out.print("How many of that item are you restocking?: ");
                         while (!scanner.hasNextInt()) {
                             System.out.println("Invalid selection. Please enter a whole number.");
+                            scanner.nextLine();
                         }
                         int numToRestock = scanner.nextInt();
                         restockItem(itemNames, itemStocks, itemToRestock, numToRestock);
