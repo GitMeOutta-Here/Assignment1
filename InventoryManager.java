@@ -6,7 +6,7 @@ public class InventoryManager {
         double[] itemPrices = new double[10];
         int[] itemStocks = new int[10];
 
-        System.out.println("Welcome to the Inventory Manager!\n");
+        System.out.println("\nWelcome to the Inventory Manager!");
         try (Scanner scanner = new Scanner(System.in)) {
             while (true) {
                 System.out.println("Please make a selection: ");
@@ -20,6 +20,7 @@ public class InventoryManager {
                     case 1 -> printInventory(itemNames, itemPrices, itemStocks);
                     case 2 -> {
                         System.out.print("Which item are you restocking?: ");
+                        scanner.nextLine();
                         while (scanner.hasNextInt() || scanner.hasNextDouble()) {
                             System.out.print("\nInvalid input. Enter the name of the item you are restocking: ");
                             scanner.nextLine();
