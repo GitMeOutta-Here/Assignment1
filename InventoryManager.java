@@ -2,11 +2,15 @@ import java.util.Scanner;
 
 public class InventoryManager {
     public static void main(String[] args) {
-        String[] itemNames = new String[10];
-        double[] itemPrices = new double[10];
-        int[] itemStocks = new int[10];
+        //String[] itemNames = new String[10];
+        //double[] itemPrices = new double[10];
+        //int[] itemStocks = new int[10];
+        String[] itemNames = {"Corn", "Beef", "Tomatoes", "Bluberry", "Ham", "Cheese", "Turkey", "Radish", "Broccoli", "Grapes"};
+        double[] itemPrices = {2.50, 3.75, 0.45, 0.12, 2.0, 1.43, 3.21, 0.76, 0.34, 0.09};
+        int[] itemStocks = {15, 30, 21, 78, 321, 90, 532, 82, 29, 80};
 
-        System.out.println("Welcome to the Inventory Manager!\n");
+
+        System.out.println("\nWelcome to the Inventory Manager!");
         try (Scanner scanner = new Scanner(System.in)) {
             while (true) {
                 System.out.println("Please make a selection: ");
