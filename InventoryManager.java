@@ -59,4 +59,19 @@ public class InventoryManager {
             }
         }
     }
+
+    public static void restockItem(String[] names, int[] stocks, String target, int amount) {
+        boolean isFound = false;
+        for (int i = 0; i < 10; i++) {
+            if (names[i] != null && names[i].equals(target)) {
+                stocks[i] = stocks[i] + amount;
+                isFound = true;
+            }
+        }
+
+        if (isFound == false) {
+                System.out.println("Item not found");
+            }
+    }
 }
+
