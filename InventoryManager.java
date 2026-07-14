@@ -23,11 +23,13 @@ public class InventoryManager {
                         while (scanner.hasNextInt() || scanner.hasNextDouble()) {
                             System.out.println("Invalid input. Enter the name of the item you are restocking.");
                             scanner.nextLine();
-                        }       String itemToRestock = scanner.nextLine();
+                        }
+                        String itemToRestock = scanner.nextLine();
                         System.out.print("How many of that item are you restocking?: ");
                         while (!scanner.hasNextInt()) {
                             System.out.println("Invalid selection. Please enter a whole number.");
-                        }       int numToRestock = scanner.nextInt();
+                        }
+                        int numToRestock = scanner.nextInt();
                         restockItem(itemNames, itemStocks, itemToRestock, numToRestock);
                     }
                     case 3 -> {
