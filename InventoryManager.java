@@ -6,8 +6,7 @@ public class InventoryManager {
     * Gets user input, handles erroneous inputs,
     * and calls restockItem & printInventory
     * 
-    * @param args Stores command line inputs at runtime
-    * @return Returns nothing since method is void
+    * @param args Stores command line arguments (not used)
     */
     
     public static void main(String[] args) {
@@ -60,10 +59,9 @@ public class InventoryManager {
     /**
     * Prints the name, price, and stocks of each item in the arrays
     * 
-    * @param names  The name of each item.
-    * @param prices The price of each item
-    * @param stocks The amouunt of each item
-    * @return Returns nothing since method is void
+    * @param names  An array containing each items names
+    * @param prices An array containing each items price
+    * @param stocks An array containing each items current stocks
     */
 
     
@@ -87,11 +85,10 @@ public class InventoryManager {
     /**
     * Increases the stock of a selected item
     * 
-    * @param names  The name of each item.
-    * @param stocks The amouunt of each item
-    * @param target The target item to restock
-    * @param amount The amount of items that will be restocked
-    * @return Returns nothing since method is void
+    * @param names  An array containing each items names
+    * @param stocks An array containing each items current stocks
+    * @param target A string representing the item to be restocked
+    * @param amount An integer representing the num of items to restock
     */
  
     public static void restockItem(String[] names, int[] stocks, String target, int amount) {
