@@ -98,7 +98,8 @@ public class InventoryManager {
     }
 
     /**
-    * Finds item at target index, and increases item stock by amount
+    * Finds item at index associated with target string,
+    * and increases item stock by integer amount
     * 
     * @param names  An array containing each items names
     * @param stocks An array containing each items current stocks
