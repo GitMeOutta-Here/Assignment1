@@ -4,7 +4,7 @@ import java.util.Scanner;
  * InventoryManager manages and changes a store's inventory within 3 parallel arrays
  * 
  * <p> 
- * Prints a menu displaying 3 options (view inventory, restock item & exit program).
+ * Prints a menu displaying 3 options (view inventory, restock item, and exit program).
  * Handles erroneous user input so that the scanner object always takes correct datatype, 
  * and correct values if inputed value is outside of array range
  * 
@@ -12,13 +12,14 @@ import java.util.Scanner;
  * 
  * @author Jack Grossenbacher
  * @author Daniel Gallegos
+ * @version 1.0.0
  */
 
 public class InventoryManager {
 
     /**
-    * Gets user input, handles erroneous inputs,
-    * and calls restockItem & printInventory
+    * Main method of the class, implements other methods,
+    * and handles erroneous user input
     * 
     * @param args Stores command line arguments (not used)
     */
