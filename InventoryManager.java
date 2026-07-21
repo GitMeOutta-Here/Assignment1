@@ -1,5 +1,19 @@
 import java.util.Scanner;
 
+/**
+ * InventoryManager manages and changes a store's inventory within 3 parallel arrays
+ * 
+ * <p> 
+ * Prints a menu displaying 3 options (view inventory, restock item & exit program).
+ * Handles erroneous user input so that the scanner object always takes correct datatype, 
+ * and correct values if inputed value is outside of array range
+ * 
+ * 
+ * 
+ * @author Jack Grossenbacher
+ * @author Daniel Gallegos
+ */
+
 public class InventoryManager {
 
     /**
@@ -83,7 +97,7 @@ public class InventoryManager {
     }
 
     /**
-    * Increases the stock of a selected item
+    * Finds item at target index, and increases item stock by amount
     * 
     * @param names  An array containing each items names
     * @param stocks An array containing each items current stocks
